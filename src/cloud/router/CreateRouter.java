@@ -44,7 +44,6 @@ public class CreateRouter {
 	
 	private void createRouter(int seleArea) throws Exception {
 		
-		
 		for (int i = 1; i < 2; i++) {
 			// ×ó²àÔÆÂ·ÓÉÆ÷
 			WebElement cloudserver = driver.findElement(By.xpath("//a[@data-testid='sidebarNav-cloud-router']"));

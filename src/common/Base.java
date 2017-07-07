@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import common.Login;
@@ -26,24 +27,30 @@ public class Base {
 
 	@Test
 	public WebDriver beforeTest(WebDriver driver) throws Exception {
-		Login userLogin = new Login();
-		String[] value = userLogin.loginSeting();
-		driver = new FirefoxDriver();
+		//Login userLogin = new Login();
+		//String[] value = userLogin.loginSeting();
+		System.setProperty("webdriver.chrome.driver", "D:\\Tools\\selenium + Firefox 33.0\\chromedriver.exe"); 
+		driver= new ChromeDriver();
+
+		//driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get(value[4]);
+		//driver.get(value[4]);
+		driver.get("https://testconsole.anchnet.com");
 		Thread.sleep(2000);
 		WebElement searchInput = driver.findElement(By.name("email"));
-		searchInput.sendKeys(value[0]);
+		//searchInput.sendKeys(value[0]);
+		searchInput.sendKeys("test4@51idc.com");
 		Thread.sleep(2000);
 		WebElement searchInput2 = driver.findElement(By.name("password"));
-		searchInput2.sendKeys(value[1]);
+		//searchInput2.sendKeys(value[1]);
+		searchInput2.sendKeys("123456");
 		Thread.sleep(2000);
 		WebElement loginButton = driver.findElement(By.xpath("//input[@onclick='onLogin()']"));
 		loginButton.click();
 		Thread.sleep(2000);
-		WebElement consoleButton = driver.findElement(By.xpath("//a[@href='http://testconsole.anchnet.com']"));
+		/*WebElement consoleButton = driver.findElement(By.xpath("//a[@href='http://testconsole.anchnet.com']"));
 		consoleButton.click();
-		Thread.sleep(3000);
+		Thread.sleep(3000);*/
 		return driver;
 
 	}
@@ -80,7 +87,7 @@ public class Base {
 	}
 	
 	//新建
-		@Test
+	@Test
 		public WebDriver newOne(WebDriver driver) throws Exception {
 				
 			//WebElement creat = driver.findElement(By.xpath("//a[@data-testid = 'create']"));
@@ -93,7 +100,7 @@ public class Base {
 			
 			return driver;
 		}
-		@Test
+	    @Test
 		public WebDriver newOnecreat(WebDriver driver) throws Exception {
 		
 			WebElement newnet = driver.findElement(By.xpath("//span[@data-testid='create']"));
@@ -269,7 +276,7 @@ public class Base {
 	 * @author yangw
 	 * @version 1.00
 	 */
-	@Test
+    @Test
 	public static boolean isElementExsit(WebDriver driver, By locator) {
 		boolean flag = false;
 		try {
@@ -287,11 +294,11 @@ public class Base {
 	 * @author yangw
 	 * @version 1.00
 	 */
-	@Test
+    @Test
 	public void rwFile(String cases, String message, String value) {
 		FileWriter fw = null;
 		try {
-			fw = new FileWriter("d:\\cloud2.0log.txt", true);
+			fw = new FileWriter("E:\\gitTest\\cloud2log.txt", true);
 			// 布尔转字符串
 			String valuestring = String.valueOf(value);
 			fw.write(cases + "" + message + "" + valuestring + "\r\n");// 这里向文件中输入结果
@@ -305,7 +312,6 @@ public class Base {
 				try {
 					fw.close();
 				} catch (IOException e) {
-
 					e.printStackTrace();
 				}
 			}

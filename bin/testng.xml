@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" parallel="classes" allow-return-values="true" preserve-order="true">
- 
 
-	 <test name="Try2">
-	  <classes>  
-	   <class name="cloud.instance.DelInstance"/>
-	     <methods>
-	        <include name="delallserver" />     
-	     </methods>
-	  </classes> 
-	 </test> <!-- Test --> 
+	 
+	 <test name="Try1">	 
+	    <classes>  
+	       <class name="cloud.router.CreateRouter"/>
+	         <!--  <methots>
+              <include name="createRouterAll"/>
+              </methots> -->
+	         
+	    </classes> 	  
+	 </test> 
 	 
 	
 	   

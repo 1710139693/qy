@@ -16,12 +16,14 @@ public class Login {
 	 * 
 	 * @author yangw
 	 * @version 1.00
+	 * @throws IOException 
+	 * @throws BiffException 
 	 */
-	@Test
+	
 	public String[] loginSeting() throws BiffException, IOException {
 
 		jxl.Workbook readwb = null;
-		InputStream instream = new FileInputStream("d:\\selenium_cfg.xls");
+		InputStream instream = new FileInputStream("E:\\gitTest\\selenium_cfg.xls");
 		readwb = Workbook.getWorkbook(instream);
 
 		// 获取第一张Sheet表
@@ -37,10 +39,8 @@ public class Login {
 			for (int j = 6; j < rsColumns; j++) {
 				Cell cell = readsheet.getCell(j, i);
 				if (i == 0) {
-
 					user = cell.getContents();
 					System.out.println("user1=" + user);
-
 				}
 
 				if (i == 1) {
@@ -62,7 +62,7 @@ public class Login {
 				if ("".equals(cell.getContents()) == true) // 如果读取的数据为空
 					break;
 			}
-			// System.out.println("第"+i+"行");
+			 System.out.println("第"+i+"行");
 
 		}
 		readwb.close();
