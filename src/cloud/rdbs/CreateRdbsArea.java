@@ -178,7 +178,7 @@ public class CreateRdbsArea {
 
 		 }//for
 
-		// driver.close();
+		// driver.quit();
 	}// 创建服务器函数结束
 
 	/**

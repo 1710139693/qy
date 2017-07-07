@@ -34,7 +34,7 @@ public class CreateVolumeIdArea {
 		createVolume(0, "radio-1", "00", "auto_cap");//华东一区容量型
 		createVolume(1, "radio-0", "0", "auto_perf");//亚太一区性能型
 		createVolume(2, "radio-2", "0", "auto_super");//华东二区超高性能型
-		driver.close();
+		driver.quit();
 	}
 
 	/**

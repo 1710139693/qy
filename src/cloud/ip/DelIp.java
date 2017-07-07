@@ -33,7 +33,7 @@ public class DelIp {
 		delAutoIp("region-select-ac1");
 		delAutoIp("region-select-ac2");
 		delAutoIp("region-select-ac3");
-		driver.close();
+		driver.quit();
 
 	}
 

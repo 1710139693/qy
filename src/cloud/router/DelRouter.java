@@ -27,7 +27,7 @@ public class DelRouter {
 		delAutoRouter("region-select-ac1");
 		delAutoRouter("region-select-ac2");
 		delAutoRouter("region-select-ac3");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delAutoRouter(String ac) throws Exception {

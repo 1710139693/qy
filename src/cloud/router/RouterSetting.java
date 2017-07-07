@@ -39,7 +39,7 @@ public class RouterSetting {
 		RouterSetting();
 	//	RouterSetting(1);
 	//	RouterSetting(2);
-		driver.close();
+		driver.quit();
 		
 	}
 	

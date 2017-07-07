@@ -38,7 +38,7 @@ public class CreateRouter {
 		seleArea = 2;
 		createRouter(seleArea);
 		//createRouter(2);
-		driver.close();
+		driver.quit();
 		
 	}
 	

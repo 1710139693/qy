@@ -103,7 +103,7 @@ public class RecycleVolume {
 			System.out.println("回收站没有云硬盘");
 		}
 
-		driver.close();
+		driver.quit();
 	}
 
 	/**

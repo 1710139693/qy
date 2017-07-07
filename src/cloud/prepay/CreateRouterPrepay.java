@@ -38,7 +38,7 @@ public class CreateRouterPrepay {
 		seleArea = 1;
 		createRouter(seleArea);
 		//createRouter(2);
-		driver.close();
+		driver.quit();
 		
 	}
 	

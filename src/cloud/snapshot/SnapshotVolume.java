@@ -156,7 +156,7 @@ public class SnapshotVolume {
 			System.out.println("√ª”–”≤≈Ã");
 		}
 
-		driver.close();
+		driver.quit();
 	}
 
 	/**

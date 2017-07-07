@@ -31,7 +31,7 @@ public class GroupSetting {
 		CreateGroup(seleArea);
 		GroupSet(seleArea);
 		
-		driver.close();
+		driver.quit();
 	}
 		
 	private void GroupSet(int seleArea) throws Exception {

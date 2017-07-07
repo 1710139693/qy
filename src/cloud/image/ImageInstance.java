@@ -134,7 +134,7 @@ public class ImageInstance {
 			System.out.println("没有服务器");
 		}
 
-		driver.close();
+		driver.quit();
 	}
 
 	/**

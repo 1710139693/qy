@@ -150,7 +150,7 @@ public class SnapshotRdbs {
 			System.out.println("没有数据库");
 		}
 
-		driver.close();
+		driver.quit();
 	}
 
 	/**

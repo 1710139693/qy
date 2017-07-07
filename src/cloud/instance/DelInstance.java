@@ -33,7 +33,7 @@ public class DelInstance {
 		driver = pubMeth.beforeTest(driver);
 		delServer("region-select-ac1");
 		delServer("region-select-ac2");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delServer(String ac) throws Exception {

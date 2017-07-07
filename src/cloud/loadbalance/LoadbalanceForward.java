@@ -89,7 +89,7 @@ public class LoadbalanceForward {
 			System.out.println("转发策略不存在");
 		}
 		
-		driver.close();	
+		driver.quit();	
 		
 	}
 	

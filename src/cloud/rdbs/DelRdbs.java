@@ -27,7 +27,7 @@ public class DelRdbs {
 		delRdbs("region-select-ac1");
 		delRdbs("region-select-ac2");
 		delRdbs("region-select-ac3");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delRdbs(String ac) throws Exception {

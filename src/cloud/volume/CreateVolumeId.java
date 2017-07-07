@@ -32,7 +32,7 @@ public class CreateVolumeId {
 		driver = pubMeth.beforeTest(driver);
 		createVolume("radio-0", "0", "auto_perf");
 		createVolume("radio-1", "00", "auto_cap");
-		// driver.close();
+		// driver.quit();
 	}
 
 	/**

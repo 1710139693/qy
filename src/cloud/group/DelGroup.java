@@ -27,7 +27,7 @@ public class DelGroup {
 		delAutoFirewall("region-select-ac1");
 		delAutoFirewall("region-select-ac2");
 		delAutoFirewall("region-select-ac3");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delAutoFirewall(String ac) throws Exception {

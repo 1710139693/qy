@@ -25,7 +25,7 @@ public class DelSnapshot {
 	public void delAllBackup() throws Exception {
 		driver = pubMeth.beforeTest(driver);
 		delBackup("region-select-ac1");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delBackup(String ac) throws Exception {

@@ -25,7 +25,7 @@ public class DelImage {
 	public void delAllImage() throws Exception {
 		driver = pubMeth.beforeTest(driver);
 		delImage("region-select-ac2");
-		driver.close();
+		driver.quit();
 	}
 
 	

@@ -27,7 +27,7 @@ public class DelVolume {
 		delVolume("region-select-ac1");
 		delVolume("region-select-ac2");
 		delVolume("region-select-ac3");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delVolume(String ac) throws Exception {

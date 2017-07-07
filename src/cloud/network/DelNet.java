@@ -27,7 +27,7 @@ public class DelNet {
 		delAutoSdn("region-select-ac1");
 		delAutoSdn("region-select-ac2");
 		delAutoSdn("region-select-ac3");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delAutoSdn(String ac) throws Exception {

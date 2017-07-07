@@ -27,7 +27,7 @@ public class DelKeypair {
 		delAutoKeypair("region-select-ac1");
 		delAutoKeypair("region-select-ac2");
 		delAutoKeypair("region-select-ac3");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delAutoKeypair(String ac) throws Exception {

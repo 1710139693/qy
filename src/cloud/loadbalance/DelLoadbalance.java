@@ -24,7 +24,7 @@ public class DelLoadbalance {
 		delAutoLoadbalance("region-select-ac1");
 		delAutoLoadbalance("region-select-ac2");
 		delAutoLoadbalance("region-select-ac3");
-		driver.close();
+		driver.quit();
 	}
 
 	private void delAutoLoadbalance(String ac) throws Exception {
