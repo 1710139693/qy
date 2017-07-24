@@ -306,7 +306,7 @@ import common.Base;
 			// 提交
 			WebElement submit = driver.findElement(By.xpath("//div[@class = 'btn-big']"));
 			submit.click();
-			Thread.sleep(20000);
+			Thread.sleep(40000);
 			System.out.println("立即开通");
 
 			// 判断有没有建出来，取得返回值re
